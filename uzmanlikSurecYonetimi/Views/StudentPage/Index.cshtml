@@ -1,0 +1,496 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Anasayfa</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="~/content/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="~/content/layout_1/LTR/material/full/assets/css/all.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="~/content/js/main/jquery.min.js"></script>
+	<script src="~/content/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="~/content/js/plugins/visualization/d3/d3.min.js"></script>
+	<script src="~/content/js/plugins/visualization/d3/d3_tooltip.js"></script>
+	<script src="~/content/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="~/content/js/plugins/pickers/daterangepicker.js"></script>
+
+	<script src="~/content/layout_1/LTR/material/full/assets/js/app.js"></script>
+	<script src="~/content/js/demo_pages/dashboard.js"></script>
+	<script src="~/content/js/demo_charts/pages/dashboard/light/streamgraph.js"></script>
+	<script src="~/content/js/demo_charts/pages/dashboard/light/sparklines.js"></script>
+	<script src="~/content/js/demo_charts/pages/dashboard/light/lines.js"></script>	
+	<script src="~/content/js/demo_charts/pages/dashboard/light/areas.js"></script>
+	<script src="~/content/js/demo_charts/pages/dashboard/light/donuts.js"></script>
+	<script src="~/content/js/demo_charts/pages/dashboard/light/bars.js"></script>
+	<script src="~/content/js/demo_charts/pages/dashboard/light/progress.js"></script>
+	<script src="~/content/js/demo_charts/pages/dashboard/light/heatmaps.js"></script>
+	<script src="~/content/js/demo_charts/pages/dashboard/light/pies.js"></script>
+	<script src="~/content/js/demo_charts/pages/dashboard/light/bullets.js"></script>
+	<script src="~/content/js/plugins/ui/fullcalendar/main.min.js"></script>
+
+	<script src="~/content/js/demo_pages/fullcalendar_advanced.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-lg navbar-dark bg-indigo navbar-static">
+		<div class="d-flex flex-1 d-lg-none">
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+
+			<button data-target="#navbar-search" type="button" class="navbar-toggler" data-toggle="collapse">
+				<i class="icon-search4"></i>
+			</button>
+		</div>
+
+		<div class="navbar-brand text-center text-lg-left">
+			<a href="index.html" class="d-inline-block">
+				<img style="width: 80px; height: 80px; margin-bottom: 5px;" src="~/content/images/kou_logo.png" class="d-none d-sm-block" alt="">
+			</a>
+			<a href="index.html" class="d-inline-block">
+				<img style="width: 100px; height: 90px;" src="~/content/images/tipfak.png" class="d-none d-sm-block" alt="">
+			</a>
+		</div>
+		
+
+		<div class="navbar-collapse collapse flex-lg-1 mx-lg-3 order-2 order-lg-1" id="navbar-search">
+			<div class="navbar-search d-flex align-items-center py-2 py-lg-0">
+				<div class="form-group-feedback form-group-feedback-left flex-grow-1">
+					<input type="text" class="form-control" placeholder="Öğrenci Ara">
+					<div class="form-control-feedback">
+						<i class="icon-search4 text-white opacity-50"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="navbar-collapse collapse flex-lg-1 mx-lg-3 order-2 order-lg-1" id="navbar-search">
+			<div class="navbar-search d-flex align-items-center py-2 py-lg-0">
+				<div class="form-group-feedback form-group-feedback-left flex-grow-1">
+					<input type="text" class="form-control" placeholder="Birim Ara">
+					<div class="form-control-feedback">
+						<i class="icon-search4 text-white opacity-50"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="d-flex justify-content-end align-items-center flex-1 flex-lg-0 order-1 order-lg-2">
+			<ul class="navbar-nav flex-row">
+				<li class="nav-item nav-item-dropdown-lg dropdown">
+					<a href="mailto:ogrenci@mail.com" class="navbar-nav-link navbar-nav-link-toggle">
+						<i class="mi-mail-outline"></i>
+						<span class="d-none d-lg-inline-block ml-2">Mail Gönder</span>
+					</a>
+					
+				</li>
+
+				<li class="nav-item nav-item-dropdown-lg dropdown">
+					
+					
+					
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link navbar-nav-link-toggler">
+						<i class="icon-switch2"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-light sidebar-main sidebar-expand-lg">
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+				<!-- User menu -->
+				<div class="sidebar-section">
+					<div class="sidebar-user-material">
+						<div class="sidebar-section-body">
+							<div class="d-flex">
+								<div class="flex-1">
+									<button type="button" class="btn btn-outline-light border-transparent btn-icon btn-sm rounded-pill">
+										<i class="icon-wrench"></i>
+									</button>
+								</div>
+								<a href="#" class="flex-1 text-center"><img src="~/content/images/placeholders/placeholder.jpg" class="img-fluid rounded-circle shadow-sm" width="80" height="80" alt=""></a>
+								<div class="flex-1 text-right">
+									<button type="button" class="btn btn-outline-light border-transparent btn-icon rounded-pill btn-sm sidebar-control sidebar-main-resize d-none d-lg-inline-flex">
+										<i class="icon-transmission"></i>
+									</button>
+
+									<button type="button" class="btn btn-outline-light border-transparent btn-icon rounded-pill btn-sm sidebar-mobile-main-toggle d-lg-none">
+										<i class="icon-cross2"></i>
+									</button>
+								</div>
+							</div>
+
+							<div class="text-center">
+								<h6 class="mb-0 text-white text-shadow-dark mt-3" style="color: black !important;">Suhap Şahin</h6>
+								<span class="font-size-sm text-white text-shadow-dark"></span>
+							</div>
+						</div>
+													
+						<div class="sidebar-user-material-footer">
+							<a href="#user-nav" class="d-flex justify-content-between align-items-center text-shadow-dark dropdown-toggle" data-toggle="collapse"><span style="color: black;">Hesabım</span></a>
+						</div>
+					</div>
+
+					<div class="collapse border-bottom" id="user-nav">
+						<ul class="nav nav-sidebar">
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<i class="icon-user-plus"></i>
+									<span>Profilim</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<i class="icon-cog5"></i>
+									<span>Ayarlar</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<i class="icon-switch2"></i>
+									<span>Çıkış Yap</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /user menu -->
+
+
+				<!-- Main navigation -->
+				<div class="sidebar-section">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+
+						<!-- Main -->
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs mt-1">Main</div> <i class="icon-menu" title="Main"></i></li>
+						<li class="nav-item">
+							<a asp-controller="HomePage"
+   asp-action="Index" class="nav-link active">
+								<i class="icon-home4"></i>
+								<span>
+									ANASAYFA
+								</span>
+							</a>
+						</li>
+                        <li class="nav-item">
+							 <a asp-controller="AnaBilimDallari"
+   asp-action="Index" class="nav-link active">
+								<i class="icon-home4"></i>
+								<span>
+									Bölümler ve Anabilim Dalları
+								</span>
+							</a>
+						</li>
+                        <li class="nav-item">
+							 <a asp-controller="Rapor"
+   asp-action="Index" class="nav-link active">
+								<i class="icon-home4"></i>
+								<span>
+									Rapor
+								</span>
+							</a>
+						</li>
+                        <li class="nav-item">
+							 <a asp-controller="Forms"
+   asp-action="Index" class="nav-link active">
+								<i class="icon-home4"></i>
+								<span>
+									Formlar
+								</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							 <a asp-controller="StudentPage"
+   asp-action="Index" class="nav-link active">
+								<i class="icon-home4"></i>
+								<span>
+								 Öğrenci Sayfası
+								</span>
+							</a>
+						</li>
+					
+						<!-- /main -->
+
+						<!-- Forms -->
+					
+						<!-- /forms -->
+
+						
+
+					</ul>
+				</div>
+				<!-- /main navigation -->
+
+			</div>
+			<!-- /sidebar content -->
+			
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Inner content -->
+			<div class="content-inner">
+
+				<!-- Page header -->
+				<div class="page-header page-header-light">
+					<div class="page-header-content header-elements-lg-inline">
+						<div class="page-title d-flex">
+							<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Anasayfa</span> - Öğrenci Sayfası</h4>
+							<a href="#" class="header-elements-toggle text-body d-lg-none"><i class="icon-more"></i></a>
+						</div>
+
+						<div class="header-elements d-none">
+							<div class="d-flex justify-content-center">
+								
+							</div>
+						</div>
+					</div>
+
+					
+				</div>
+				<!-- /page header -->
+
+
+				<!-- Content area -->
+					<!-- Selectable -->
+					<div class="container">
+                        <div class="main-body">
+                        
+    
+                        
+                              <div class="row gutters-sm">
+                                <div class="col-md-4 mb-3">
+                                  <div class="card">
+                                    <div class="card-body">
+                                      <div class="d-flex flex-column align-items-center text-center">
+                                        <img src="~/content/images/default_profile_400x400.png" alt="Admin" class="rounded-circle" width="150">
+                                        <div class="mt-3">
+                                          <h4>Berk Mahim</h4>
+                                         
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="card mt-3" style="padding:10px ;">
+<p>Öğrenci hakkında bilgiler yer alacaktır</p>
+								</div>
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card mb-3">
+                                    <div class="card-body">
+                                     
+                                      <div class="row">
+                                        <div class="col-sm-3">
+                                          <h6 class="mb-0">Anabilim Dalı</h6>
+                                        </div>
+                                        <div class="col-sm-9 text-secondary">
+                                          Kardiyoloji
+                                        </div>
+                                      </div>
+                                      <hr>
+                                      <div class="row">
+                                        <div class="col-sm-3">
+                                          <h6 class="mb-0">Bilim Dalı</h6>
+                                        </div>
+                                        <div class="col-sm-9 text-secondary">
+											Nöroloji
+                                        </div>
+                                      </div>
+                                      <hr>
+                                      <div class="row">
+                                        <div class="col-sm-3">
+                                          <h6 class="mb-0">Göreve Başlama Tarihi</h6>
+                                        </div>
+                                        <div class="col-sm-9 text-secondary">
+                                          10/10/2022
+                                        </div>
+                                      </div>
+                                      <hr>
+                                      <div class="row">
+                                        <div class="col-sm-3">
+                                          <h6 class="mb-0">Görev Süresi</h6>
+                                        </div>
+                                        <div class="col-sm-9 text-secondary">
+                                          1 yıl 5 ay
+                                        </div>
+                                      </div>
+                                      <hr>
+                                      <div class="row">
+                                        <div class="col-sm-3">
+                                          <h6 class="mb-0">İzinler</h6>
+                                        </div>
+                                        <div class="col-sm-9 text-secondary">
+                                          3 gün
+                                        </div>
+                                      </div>
+                                      <hr>
+                                      <div class="row">
+                                        <div class="col-sm-3">
+                                          <h6 class="mb-0">Görevlendirme</h6>
+                                        </div>
+                                        <div class="col-sm-9 text-secondary">
+                                          6 ay
+                                        </div>
+                                      </div>
+                                      <hr>
+                                      <div class="row">
+                                        <div class="col-sm-3">
+                                          <h6 class="mb-0">Formasyon</h6>
+                                        </div>
+                                        <div class="col-sm-9 text-secondary">
+                                          2 yıl 1 ay
+                                        </div>
+                                      </div>
+                                      <hr>
+                                      <div class="row">
+                                        <div class="col-sm-3">
+                                          <h6 class="mb-0">Önceki Görev Yeri</h6>
+                                        </div>
+                                        <div class="col-sm-9 text-secondary">
+                                          Konya
+                                        </div>
+                                      </div>
+                                      <hr>
+									  <div class="row">
+                                        <div class="col-sm-3">
+                                          <h6 class="mb-0">Tez Belgeleri</h6>
+                                        </div>
+                                        <div class="col-sm-9 text-secondary">
+                                          Görüntüle
+                                        </div>
+                                      </div>
+                                      <hr>
+									  <div class="row">
+                                        <div class="col-sm-3">
+                                          <h6 class="mb-0">Eski Eğitimi</h6>
+                                        </div>
+                                        <div class="col-sm-9 text-secondary">
+                                          Veri Girilece
+                                        </div>
+                                      </div>
+                                      <hr>
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                          <a class="btn btn-info " target="__blank" href="#">Bilgileri Yazdır</a>
+                                        </div>
+                                      </div>
+
+                                    </div>
+                                  </div>
+                    
+                                  
+                    
+                    
+                    
+                                </div>
+                              </div>
+                    
+                            </div>
+                        </div>
+                    
+                    <style type="text/css">
+                    body{
+                        color: #1a202c;
+                        text-align: left;
+                        background-color: #e2e8f0;    
+                    }
+                    .main-body {
+                        padding: 15px;
+                    }
+                    .card {
+                        box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+                    }
+                    
+                    .card {
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        min-width: 0;
+                        word-wrap: break-word;
+                        background-color: #fff;
+                        background-clip: border-box;
+                        border: 0 solid rgba(0,0,0,.125);
+                        border-radius: .25rem;
+                    }
+                    
+                    .card-body {
+                        flex: 1 1 auto;
+                        min-height: 1px;
+                        padding: 1rem;
+                    }
+                    
+                    .gutters-sm {
+                        margin-right: -8px;
+                        margin-left: -8px;
+                    }
+                    
+                    .gutters-sm>.col, .gutters-sm>[class*=col-] {
+                        padding-right: 8px;
+                        padding-left: 8px;
+                    }
+                    .mb-3, .my-3 {
+                        margin-bottom: 1rem!important;
+                    }
+                    
+                    .bg-gray-300 {
+                        background-color: #e2e8f0;
+                    }
+                    .h-100 {
+                        height: 100%!important;
+                    }
+                    .shadow-none {
+                        box-shadow: none!important;
+                    }
+                    
+                    </style>
+					<!-- /selectable -->
+				<!-- /content area -->
+
+
+				<!-- Footer -->
+				
+				<!-- /footer -->
+
+			</div>
+			<!-- /inner content -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

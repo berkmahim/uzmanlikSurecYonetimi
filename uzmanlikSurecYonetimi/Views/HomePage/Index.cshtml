@@ -1,0 +1,392 @@
+﻿@{
+       Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Anasayfa</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="~/content/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="~/content/layout_1/LTR/material/full/assets/css/all.min.css" rel="stylesheet"type="text/css">
+
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="~/content/js/main/jquery.min.js"></script>
+	<script src="~/content/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="~/content/js/plugins/visualization/d3/d3.min.js"></script>
+	<script src="~/content/js/plugins/visualization/d3/d3_tooltip.js"></script>
+	<script src="~/content/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="~/content/global_assets/js/plugins/pickers/daterangepicker.js"></script>
+
+	<script src="~/content/layout_1/LTR/material/full/assets/js/app.js"></script>
+	<script src="~/content/js/demo_pages/dashboard.js"></script>
+	<script src="~/content/js/demo_charts/pages/dashboard/light/streamgraph.js"></script>
+	<script src="~/content/js/demo_charts/pages/dashboard/light/sparklines.js"></script>
+	<script src="~/content/js/demo_charts/pages/dashboard/light/lines.js"></script>	
+	<script src="~/content/js/demo_charts/pages/dashboard/light/areas.js"></script>
+	<script src="~/content/js/demo_charts/pages/dashboard/light/donuts.js"></script>
+	<script src="~/content/js/demo_charts/pages/dashboard/light/bars.js"></script>
+	<script src="~/content/js/demo_charts/pages/dashboard/light/progress.js"></script>
+	<script src="~/content/js/demo_charts/pages/dashboard/light/heatmaps.js"></script>
+	<script src="~/content/js/demo_charts/pages/dashboard/light/pies.js"></script>
+	<script src="~/content/js/demo_charts/pages/dashboard/light/bullets.js"></script>
+	<script src="~/content/js/plugins/ui/fullcalendar/main.min.js"></script>
+
+	<script src="~/content/js/demo_pages/fullcalendar_advanced.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-lg navbar-dark bg-indigo navbar-static">
+		<div class="d-flex flex-1 d-lg-none">
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+
+			<button data-target="#navbar-search" type="button" class="navbar-toggler" data-toggle="collapse">
+				<i class="icon-search4"></i>
+			</button>
+		</div>
+
+		<div class="navbar-brand text-center text-lg-left">
+			<a href="index.html" class="d-inline-block">
+				<img style="width: 80px; height: 80px; margin-bottom: 5px;" src="~/content/images/kou_logo.png" class="d-none d-sm-block" alt="">
+			</a>
+			<a href="index.html" class="d-inline-block">
+				<img style="width: 100px; height: 90px;" src="~/content/images/tipfak.png" class="d-none d-sm-block" alt="">
+			</a>
+		</div>
+		
+
+		<div class="navbar-collapse collapse flex-lg-1 mx-lg-3 order-2 order-lg-1" id="navbar-search">
+			<div class="navbar-search d-flex align-items-center py-2 py-lg-0">
+				<div class="form-group-feedback form-group-feedback-left flex-grow-1">
+					<input type="text" class="form-control" placeholder="Öğrenci Ara">
+					<div class="form-control-feedback">
+						<i class="icon-search4 text-white opacity-50"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="navbar-collapse collapse flex-lg-1 mx-lg-3 order-2 order-lg-1" id="navbar-search">
+			<div class="navbar-search d-flex align-items-center py-2 py-lg-0">
+				<div class="form-group-feedback form-group-feedback-left flex-grow-1">
+					<input type="text" class="form-control" placeholder="Birim Ara">
+					<div class="form-control-feedback">
+						<i class="icon-search4 text-white opacity-50"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="d-flex justify-content-end align-items-center flex-1 flex-lg-0 order-1 order-lg-2">
+			<ul class="navbar-nav flex-row">
+			
+
+				<li class="nav-item nav-item-dropdown-lg dropdown">
+					
+					
+					<div class="dropdown-menu dropdown-menu-right dropdown-content wmin-lg-350">
+						<div class="dropdown-content-header">
+							<span class="font-size-sm line-height-sm text-uppercase font-weight-semibold">Latest activity</span>
+							<a href="#" class="text-body"><i class="icon-search4 font-size-base"></i></a>
+						</div>
+
+						<div class="dropdown-content-body dropdown-scrollable">
+							<ul class="media-list">
+								<li class="media">
+									<div class="mr-3">
+										<a href="#" class="btn btn-success rounded-pill btn-icon"><i class="icon-mention"></i></a>
+									</div>
+
+									<div class="media-body">
+										<a href="#">Taylor Swift</a> mentioned you in a post "Angular JS. Tips and tricks"
+										<div class="font-size-sm text-muted mt-1">4 minutes ago</div>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<a href="#" class="btn btn-pink rounded-pill btn-icon"><i class="icon-paperplane"></i></a>
+									</div>
+									
+									<div class="media-body">
+										Special offers have been sent to subscribed users by <a href="#">Donna Gordon</a>
+										<div class="font-size-sm text-muted mt-1">36 minutes ago</div>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<a href="#" class="btn btn-primary rounded-pill btn-icon"><i class="icon-plus3"></i></a>
+									</div>
+									
+									<div class="media-body">
+										<a href="#">Chris Arney</a> created a new <span class="font-weight-semibold">Design</span> branch in <span class="font-weight-semibold">Limitless</span> repository
+										<div class="font-size-sm text-muted mt-1">2 hours ago</div>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<a href="#" class="btn btn-purple rounded-pill btn-icon"><i class="icon-truck"></i></a>
+									</div>
+									
+									<div class="media-body">
+										Shipping cost to the Netherlands has been reduced, database updated
+										<div class="font-size-sm text-muted mt-1">Feb 8, 11:30</div>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<a href="#" class="btn btn-warning rounded-pill btn-icon"><i class="icon-comment"></i></a>
+									</div>
+									
+									<div class="media-body">
+										New review received on <a href="#">Server side integration</a> services
+										<div class="font-size-sm text-muted mt-1">Feb 2, 10:20</div>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<a href="#" class="btn btn-teal rounded-pill btn-icon"><i class="icon-spinner11"></i></a>
+									</div>
+									
+									<div class="media-body">
+										<strong>January, 2018</strong> - 1320 new users, 3284 orders, $49,390 revenue
+										<div class="font-size-sm text-muted mt-1">Feb 1, 05:46</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="dropdown-content-footer bg-light">
+							<a href="#" class="font-size-sm line-height-sm text-uppercase font-weight-semibold text-body mr-auto">All activity</a>
+							<div>
+								<a href="#" class="text-body" data-popup="tooltip" title="Clear list"><i class="icon-checkmark3"></i></a>
+								<a href="#" class="text-body ml-2" data-popup="tooltip" title="Settings"><i class="icon-gear"></i></a>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link navbar-nav-link-toggler">
+						<i class="icon-switch2"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-light sidebar-main sidebar-expand-lg">
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+				<!-- User menu -->
+				<div class="sidebar-section">
+					<div class="sidebar-user-material">
+						<div class="sidebar-section-body">
+							<div class="d-flex">
+								<div class="flex-1">
+									<button type="button" class="btn btn-outline-light border-transparent btn-icon btn-sm rounded-pill">
+										<i class="icon-wrench"></i>
+									</button>
+								</div>
+								<a href="#" class="flex-1 text-center"><img src="~/content/images/placeholders/placeholder.jpg" class="img-fluid rounded-circle shadow-sm" width="80" height="80" alt=""></a>
+								<div class="flex-1 text-right">
+									<button type="button" class="btn btn-outline-light border-transparent btn-icon rounded-pill btn-sm sidebar-control sidebar-main-resize d-none d-lg-inline-flex">
+										<i class="icon-transmission"></i>
+									</button>
+
+									<button type="button" class="btn btn-outline-light border-transparent btn-icon rounded-pill btn-sm sidebar-mobile-main-toggle d-lg-none">
+										<i class="icon-cross2"></i>
+									</button>
+								</div>
+							</div>
+
+							<div class="text-center">
+								<h6 class="mb-0 text-white text-shadow-dark mt-3" style="color: black !important;">Suhap Şahin</h6>
+							</div>
+						</div>
+													
+						<div class="sidebar-user-material-footer">
+							<a href="#user-nav" class="d-flex justify-content-between align-items-center text-shadow-dark dropdown-toggle" data-toggle="collapse"><span style="color: black !important;">Hesabım</span></a>
+						</div>
+					</div>
+
+					<div class="collapse border-bottom" id="user-nav">
+						<ul class="nav nav-sidebar">
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<i class="icon-user-plus"></i>
+									<span>Profilim</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<i class="icon-cog5"></i>
+									<span>Ayarlar</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<i class="icon-switch2"></i>
+									<span>Çıkış Yap</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /user menu -->
+
+
+				<!-- Main navigation -->
+							<div class="sidebar-section">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+
+						<!-- Main -->
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs mt-1">Main</div> <i class="icon-menu" title="Main"></i></li>
+						<li class="nav-item">
+							<a asp-controller="HomePage"
+   asp-action="Index" class="nav-link active">
+								<i class="icon-home4"></i>
+								<span>
+									ANASAYFA
+								</span>
+							</a>
+						</li>
+                        <li class="nav-item">
+							 <a asp-controller="AnaBilimDallari"
+   asp-action="Index" class="nav-link active">
+								<i class="icon-home4"></i>
+								<span>
+									Bölümler ve Anabilim Dalları
+								</span>
+							</a>
+						</li>
+                        <li class="nav-item">
+							 <a asp-controller="Rapor"
+   asp-action="Index" class="nav-link active">
+								<i class="icon-home4"></i>
+								<span>
+									Rapor
+								</span>
+							</a>
+						</li>
+                        <li class="nav-item">
+							 <a asp-controller="Forms"
+   asp-action="Index" class="nav-link active">
+								<i class="icon-home4"></i>
+								<span>
+									Formlar
+								</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							 <a asp-controller="StudentPage"
+   asp-action="Index" class="nav-link active">
+								<i class="icon-home4"></i>
+								<span>
+								 Öğrenci Sayfası
+								</span>
+							</a>
+						</li>
+					
+						<!-- /main -->
+
+						<!-- Forms -->
+					
+						<!-- /forms -->
+
+						
+
+					</ul>
+				</div>
+				<!-- /main navigation -->
+
+			</div>
+			<!-- /sidebar content -->
+			
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Inner content -->
+			<div class="content-inner">
+
+				<!-- Page header -->
+				<div class="page-header page-header-light">
+					<div class="page-header-content header-elements-lg-inline">
+						<div class="page-title d-flex">
+							<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Anasayfa</span></h4>
+							<a href="#" class="header-elements-toggle text-body d-lg-none"><i class="icon-more"></i></a>
+						</div>
+
+						<div class="header-elements d-none">
+							<div class="d-flex justify-content-center">
+								
+							</div>
+						</div>
+					</div>
+
+					
+				</div>
+				<!-- /page header -->
+
+
+				<!-- Content area -->
+					<!-- Selectable -->
+					<div class="card">
+						<div class="card-header">
+							<h5 class="card-title">Takvim</h5>
+						</div>
+						
+						<div class="card-body">
+
+							<div class="fullcalendar-selectable"></div>
+						</div>
+					</div>
+					<!-- /selectable -->
+				<!-- /content area -->
+
+
+				<!-- Footer -->
+				
+				<!-- /footer -->
+
+			</div>
+			<!-- /inner content -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>
